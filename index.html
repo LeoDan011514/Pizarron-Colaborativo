@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>examen</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	
+	
+	<script src="sketch.js"></script>
+
+	<style>
+		body{
+			margin:0;
+			padding:0;
+			overflow: hidden;
+		}
+		canvas {
+			margin:auto;
+		}
+
+		.todo{
+			height: 100px; 
+			background: #B0B9B1;
+		}
+
+		#paleta{
+			
+			height: 100%;
+		}
+
+		#linea{
+			background: #D6D6D6;
+			padding: 30px;
+			height: 100%;
+			margin-right: 3px;
+			
+		}
+		#circulo{
+			background: #D6D6D6;
+			padding: 30px;
+			height: 100%;
+			margin-right: 3px;
+			
+		}
+
+		#Rectangulo{
+
+			background: #D6D6D6;
+			padding: 30px;
+			height: 100%;
+			margin-right: 3px;
+		}
+
+		#colores{
+
+			background: #D6D6D6;
+			padding: 30px;
+			height: 100%;
+			margin-right: 3px;
+		}
+
+		.letra{
+			padding-top: 10px;
+			padding-left:20px;
+			color: white;
+
+		}
+	</style>
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="container-fluid">
+  	<div class="row">
+  		
+  		<div class="col-md-12" id="paleta">
+  			<div class="row todo">
+  				<div class="col-md-2">
+  					<h1 class="letra">pizarrón</h1>
+  				</div>
+  				<div class="col-md-2" id="linea">
+  					<button type="button" onclick="figura1(1)" class="btn btn-primary btn-lg btn-block">Linea</button>
+  					
+  				</div>
+  				<div class="col-md-2" id="circulo">
+  					<button type="button" onclick="figura2(2)" class="btn btn-primary btn-lg btn-block">Circulo</button>
+  				</div>
+  				<div class="col-md-2" id="Rectangulo">
+  					<button type="button" onclick="figura3(3)" class="btn btn-primary btn-lg btn-block">Rectangulo</button>
+  				</div>
+  				<div class="col-md-3" id="colores">
+  					
+  					<button type="button" onclick="color1('#30BA33')" class="btn btn-success">verde</button>
+
+					<button type="button" onclick="color2('#57FDFD')" class="btn btn-info">azul</button>
+
+					
+					<button type="button" onclick="color3('#F3932E')" class="btn btn-warning">naranja</button>
+
+					
+					<button type="button" onclick="color4('#FE2626')" class="btn btn-danger">rojo</button>
+  				</div>
+  			</div>
+  		</div>
+
+	</div>
+</div>
+
+
+ 
+</body>
+</html>
